@@ -293,10 +293,12 @@
             <div class="question-text" id="questionText"></div>
             <div id="answerArea"></div>
             <div class="explanation" id="explanation"></div>
-            <div class="buttons">
-                <button class="btn btn-primary" id="nextBtn" onclick="nextQuestion()">次の問題</button>
-                <button class="btn btn-secondary" id="skipBtn" onclick="skipQuestion()">スキップ</button>
-            </div>
+        <div class="buttons">
+            <button class="btn btn-primary" id="nextBtn" onclick="nextQuestion()">次の問題</button>
+			<button class="btn btn-secondary" id="skipBtn" onclick="skipQuestion()">スキップ</button>
+			<button class="btn btn-secondary" onclick="resetQuiz()">リセット</button>
+	</div>
+
         </div>
     </div>
 
@@ -461,9 +463,5 @@
         function skipQuestion() {
             showRandomQuestion();
         }
-
-        // 初期化
-        loadQuestions();
-    </script>
-</body>
-</html>
+function resetQuiz() {
+    //
